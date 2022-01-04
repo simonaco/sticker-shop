@@ -6,7 +6,8 @@
     "develop": "nuxt",
     "start": "nuxt start",
     "serve": "nuxt serve",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "build": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/strapi": "^0.1.3",
