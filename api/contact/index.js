@@ -6,9 +6,9 @@ module.exports = async function(context, req) {
   context.log(req.body)
   const msg = {
     to: 'simona.cotin@gmail.com',
-    from: 'simona.cotin@gmail.com',
-    subject: `${req.body.values.name} sent you a message`,
-    text: `Checkout this new message coming from your website! ${req.body.values.message}`,
+    from: req.body.email,
+    subject: `${req.body.name} sent you a message`,
+    text: `Checkout this new message coming from your website! ${req.body.message}`,
   }
   context.log(msg)
   try {
