@@ -823,10 +823,10 @@
     "@babel/types" "^7.4.4"
     "esutils" "^2.0.2"
 
-"@babel/runtime@^7.11.2", "@babel/runtime@^7.8.4":
-  "integrity" "sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw=="
-  "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.11.2.tgz"
-  "version" "7.11.2"
+"@babel/runtime@^7.11.2", "@babel/runtime@^7.15.4", "@babel/runtime@^7.8.4":
+  "integrity" "sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ=="
+  "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.16.7.tgz"
+  "version" "7.16.7"
   dependencies:
     "regenerator-runtime" "^0.13.4"
 
@@ -1220,13 +1220,23 @@
     "webpack-node-externals" "^2.5.2"
     "webpackbar" "^4.0.0"
 
-"@nuxtjs/proxy@^2.0.1":
-  "integrity" "sha512-RVZ6iYeAuWteot9oer3vTDCOEiTwg37Mqf6yy8vPD0QQaw4z3ykgM++MzfUl85jM14+qNnODZj5EATRoCY009Q=="
-  "resolved" "https://registry.npmjs.org/@nuxtjs/proxy/-/proxy-2.0.1.tgz"
-  "version" "2.0.1"
+"@nuxtjs/axios@^5.13.6":
+  "integrity" "sha512-XS+pOE0xsDODs1zAIbo95A0LKlilvJi8YW0NoXYuq3/jjxGgWDxizZ6Yx0AIIjZOoGsXJOPc0/BcnSEUQ2mFBA=="
+  "resolved" "https://registry.npmjs.org/@nuxtjs/axios/-/axios-5.13.6.tgz"
+  "version" "5.13.6"
   dependencies:
-    "consola" "^2.11.3"
-    "http-proxy-middleware" "^1.0.4"
+    "@nuxtjs/proxy" "^2.1.0"
+    "axios" "^0.21.1"
+    "axios-retry" "^3.1.9"
+    "consola" "^2.15.3"
+    "defu" "^5.0.0"
+
+"@nuxtjs/proxy@^2.0.1", "@nuxtjs/proxy@^2.1.0":
+  "integrity" "sha512-/qtoeqXgZ4Mg6LRg/gDUZQrFpOlOdHrol/vQYMnKu3aN3bP90UfOUB3QSDghUUK7OISAJ0xp8Ld78aHyCTcKCQ=="
+  "resolved" "https://registry.npmjs.org/@nuxtjs/proxy/-/proxy-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "http-proxy-middleware" "^1.0.6"
 
 "@nuxtjs/strapi@^0.1.3":
   "integrity" "sha512-UxXIFD70Z05sSGPY5E9KupdYEmCd63mA9G7eud1AcMjBvqBvfhwGiK9Z2P/oZ8Y2UXaMal/QINTYCM+vY3TchA=="
@@ -1276,10 +1286,10 @@
   "resolved" "https://registry.npmjs.org/@types/html-minifier-terser/-/html-minifier-terser-5.1.0.tgz"
   "version" "5.1.0"
 
-"@types/http-proxy@^1.17.4":
-  "integrity" "sha512-IrSHl2u6AWXduUaDLqYpt45tLVCtYv7o4Z0s1KghBCDgIIS9oW5K1H8mZG/A2CfeLdEa7rTd1ACOiHBc1EMT2Q=="
-  "resolved" "https://registry.npmjs.org/@types/http-proxy/-/http-proxy-1.17.4.tgz"
-  "version" "1.17.4"
+"@types/http-proxy@^1.17.5":
+  "integrity" "sha512-5kPLG5BKpWYkw/LVOGWpiq3nEVqxiN32rTgI53Sk12/xHFQ2rG3ehI9IO+O3W2QoKeyB92dJkoka8SUm6BX1pA=="
+  "resolved" "https://registry.npmjs.org/@types/http-proxy/-/http-proxy-1.17.8.tgz"
+  "version" "1.17.8"
   dependencies:
     "@types/node" "*"
 
@@ -1833,6 +1843,21 @@
   "version" "1.0.2"
   dependencies:
     "array-filter" "^1.0.0"
+
+"axios-retry@^3.1.9":
+  "integrity" "sha512-Co3UXiv4npi6lM963mfnuH90/YFLKWWDmoBYfxkHT5xtkSSWNqK9zdG3fw5/CP/dsoKB5aMMJCsgab+tp1OxLQ=="
+  "resolved" "https://registry.npmjs.org/axios-retry/-/axios-retry-3.2.4.tgz"
+  "version" "3.2.4"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "is-retry-allowed" "^2.2.0"
+
+"axios@^0.21.1":
+  "integrity" "sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg=="
+  "resolved" "https://registry.npmjs.org/axios/-/axios-0.21.4.tgz"
+  "version" "0.21.4"
+  dependencies:
+    "follow-redirects" "^1.14.0"
 
 "babel-loader@^8.1.0":
   "integrity" "sha512-7q7nC1tYOrqvUrN3LQK4GwSk/TQorZSOlO9C+RZDZpODgyN4ZlCqE5q9cDsyWOliN+aU9B4JX01xK9eJXowJLw=="
@@ -2546,10 +2571,10 @@
     "parseurl" "~1.3.3"
     "utils-merge" "1.0.1"
 
-"consola@^2.10.0", "consola@^2.10.1", "consola@^2.11.3", "consola@^2.14.0", "consola@^2.15.0", "consola@^2.6.0", "consola@^2.9.0":
-  "integrity" "sha512-vlcSGgdYS26mPf7qNi+dCisbhiyDnrN1zaRbw3CSuc2wGOMEGGPsp46PdRG5gqXwgtJfjxDkxRNAgRPr1B77vQ=="
-  "resolved" "https://registry.npmjs.org/consola/-/consola-2.15.0.tgz"
-  "version" "2.15.0"
+"consola@^2.10.0", "consola@^2.10.1", "consola@^2.11.3", "consola@^2.14.0", "consola@^2.15.0", "consola@^2.15.3", "consola@^2.6.0", "consola@^2.9.0":
+  "integrity" "sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw=="
+  "resolved" "https://registry.npmjs.org/consola/-/consola-2.15.3.tgz"
+  "version" "2.15.3"
 
 "console-browserify@^1.1.0":
   "integrity" "sha512-ZMkYO/LkF17QvCPqM0gxw8yUzigAOZOSWSHg91FH6orS7vcEj5dVZTidN2fQ14yBSdg97RqhSNwLUXInd52OTA=="
@@ -3034,6 +3059,11 @@
   "resolved" "https://registry.npmjs.org/defu/-/defu-2.0.4.tgz"
   "version" "2.0.4"
 
+"defu@^5.0.0":
+  "integrity" "sha512-VHg73EDeRXlu7oYWRmmrNp/nl7QkdXUxkQQKig0Zk8daNmm84AbGoC8Be6/VVLJEKxn12hR0UBmz8O+xQiAPKQ=="
+  "resolved" "https://registry.npmjs.org/defu/-/defu-5.0.0.tgz"
+  "version" "5.0.0"
+
 "depd@~1.1.2":
   "integrity" "sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak="
   "resolved" "https://registry.npmjs.org/depd/-/depd-1.1.2.tgz"
@@ -3369,9 +3399,9 @@
   "version" "5.0.1"
 
 "eventemitter3@^4.0.0":
-  "integrity" "sha512-rlaVLnVxtxvoyLsQQFBx53YmXHDxRIzzTLbdfxqi4yocpSjAxXwkU0cScM5JgSKMqEhrZpnvQ2D9gjylR0AimQ=="
-  "resolved" "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.4.tgz"
-  "version" "4.0.4"
+  "integrity" "sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw=="
+  "resolved" "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz"
+  "version" "4.0.7"
 
 "events@^3.0.0":
   "integrity" "sha512-Rv+u8MLHNOdMjTAFeT3nCjHn2aGlx435FP/sDHNaRhDEMwyI/aB22Kj2qIN8R0cw3z28psEQLYwxVKLsKrMgWg=="
@@ -3669,10 +3699,10 @@
     "inherits" "^2.0.3"
     "readable-stream" "^2.3.6"
 
-"follow-redirects@^1.0.0":
-  "integrity" "sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA=="
-  "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.13.0.tgz"
-  "version" "1.13.0"
+"follow-redirects@^1.0.0", "follow-redirects@^1.14.0":
+  "integrity" "sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A=="
+  "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.6.tgz"
+  "version" "1.14.6"
 
 "for-in@^1.0.2":
   "integrity" "sha1-gQaNKVqBQuwKxybG4iAMMPttXoA="
@@ -4112,15 +4142,15 @@
     "statuses" ">= 1.5.0 < 2"
     "toidentifier" "1.0.0"
 
-"http-proxy-middleware@^1.0.4":
-  "integrity" "sha512-CKzML7u4RdGob8wuKI//H8Ein6wNTEQR7yjVEzPbhBLGdOfkfvgTnp2HLnniKBDP9QW4eG10/724iTWLBeER3g=="
-  "resolved" "https://registry.npmjs.org/http-proxy-middleware/-/http-proxy-middleware-1.0.5.tgz"
-  "version" "1.0.5"
+"http-proxy-middleware@^1.0.6":
+  "integrity" "sha512-13eVVDYS4z79w7f1+NPllJtOQFx/FdUW4btIvVRMaRlUY9VGstAbo5MOhLEuUgZFRHn3x50ufn25zkj/boZnEg=="
+  "resolved" "https://registry.npmjs.org/http-proxy-middleware/-/http-proxy-middleware-1.3.1.tgz"
+  "version" "1.3.1"
   dependencies:
-    "@types/http-proxy" "^1.17.4"
+    "@types/http-proxy" "^1.17.5"
     "http-proxy" "^1.18.1"
     "is-glob" "^4.0.1"
-    "lodash" "^4.17.19"
+    "is-plain-obj" "^3.0.0"
     "micromatch" "^4.0.2"
 
 "http-proxy@^1.18.1":
@@ -4469,6 +4499,11 @@
   "resolved" "https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-1.1.0.tgz"
   "version" "1.1.0"
 
+"is-plain-obj@^3.0.0":
+  "integrity" "sha512-gwsOE28k+23GP1B6vFl1oVh/WOzmawBrKwo5Ev6wMKzPkaXaCDIQKzLnvsA42DRlbVTWorkgTKIviAKCWkfUwA=="
+  "resolved" "https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-3.0.0.tgz"
+  "version" "3.0.0"
+
 "is-plain-object@^2.0.3", "is-plain-object@^2.0.4":
   "integrity" "sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og=="
   "resolved" "https://registry.npmjs.org/is-plain-object/-/is-plain-object-2.0.4.tgz"
@@ -4492,6 +4527,11 @@
   "integrity" "sha512-qgDYXFSR5WvEfuS5dMj6oTMEbrrSaM0CrFk2Yiq/gXnBvD9pMa2jGXxyhGLfvhZpuMZe18CJpFxAt3CRs42NMg=="
   "resolved" "https://registry.npmjs.org/is-resolvable/-/is-resolvable-1.1.0.tgz"
   "version" "1.1.0"
+
+"is-retry-allowed@^2.2.0":
+  "integrity" "sha512-XVm7LOeLpTW4jV19QSH38vkswxoLud8sQ57YwJVTPWdiaI9I8keEhGFpBlslyVsgdQy4Opg8QOLb8YRgsyZiQg=="
+  "resolved" "https://registry.npmjs.org/is-retry-allowed/-/is-retry-allowed-2.2.0.tgz"
+  "version" "2.2.0"
 
 "is-ssh@^1.3.0":
   "integrity" "sha512-0eRIASHZt1E68/ixClI8bp2YK2wmBPVWEismTs6M+M099jKgrzl/3E976zIbImSIob48N2/XGe9y7ZiYdImSlg=="

@@ -72,7 +72,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/strapi'],
+  modules: ['@nuxtjs/strapi', '@nuxtjs/axios'],
   strapi: {
     url: process.env.API_URL || "https://stickershop.azurewebsites.net",
     entities: [

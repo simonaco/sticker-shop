@@ -2,6 +2,11 @@
 <div class="flex justify-between m-6">
   <p class="text-xs font-semibold text-gray-600">Strapi Starter Nuxt.js E-commerce</p>
   <div class="flex">
+    <nuxt-link :to="`/contact`">
+      <p class="text-xs font-semibold text-gray-600">Contact us</p>
+    </nuxt-link>
+  </div>
+  <div class="flex">
     <a href="https://twitter.com/strapijs" class="max-w-xs ml-4">
       <Twitter />
     </a>
