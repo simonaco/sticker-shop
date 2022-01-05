@@ -159,7 +159,7 @@ export default {
     sendMessage() {
       this.loading = true;
       this.$axios
-        .post("/api/messages", {
+        .post("contact", {
           name: this.name,
           email: this.email,
           phone: this.phone,

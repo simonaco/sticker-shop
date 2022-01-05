@@ -80,6 +80,9 @@ export default {
       'categories'
     ],
   },
+  axios: {
+    baseURL: '/api/'
+  },
   env: {
     storeUrl: process.env.STORE_URL || "https://stickershop.azurewebsites.net"
   },
