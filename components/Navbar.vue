@@ -5,16 +5,31 @@
         <img src="~/assets/strapi.png" class="logo" height="150" width="150" />
       </span>
     </nuxt-link>
+
     <div class="menu-list auth">
       <template v-if="!userInfo">
-        <template v-for="provider in providers">
-          <Login :key="provider" :provider="provider" />
-        </template>
+        <div class="flex">
+          <p class="text-xs font-semibold text-gray-600">Login</p>
+          <a href="/.auth/login/github" class="max-w-xs ml-4">
+            <Github />
+          </a>
+          <a href="/.auth/login/twitter" class="ml-3">
+            <Twitter />
+          </a>
+          <a href="/.auth/login/aad" class="ml-3">
+            <AAD />
+          </a>
+        </div>
       </template>
-      <Logout v-if="userInfo" />
+      
     </div>
     <div v-if="userInfo">
-      <p>Welcome, {{ userInfo.userDetails }}</p>
+      <div class="flex">
+      <p class="text-xs font-semibold text-gray-600">Welcome, {{ userInfo.userDetails }}</p>
+      <a href="/.auth/logout" class="ml-3">
+            
+          <p class="text-xs font-semibold text-gray-600">Logout</p></a>
+      </div>
     </div>
     <button class="snipcart-checkout flex items-center">
       <Cart />
@@ -27,8 +42,10 @@
 
 <script>
 import Cart from "./icons/cart.vue";
-import Login from "~/components/Login.vue";
-import Logout from "~/components/Logout.vue";
+
+import Twitter from "~/components/icons/twitter.vue";
+import Github from "~/components/icons/github.vue";
+import AAD from "~/components/icons/aad.vue";
 
 export default {
   data() {
@@ -58,8 +75,9 @@ export default {
   },
   components: {
     Cart,
-    Login,
-    Logout
+    Github,
+    Twitter,
+    AAD,
   },
 };
 </script>
