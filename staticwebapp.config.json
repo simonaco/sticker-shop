@@ -2,11 +2,12 @@
     "routes": [
         {
           "route": "/1d2d8e4a50431b29a6bc8b0b78b40c78",
-          "redirect": "/1d2d8e4a50431b29a6bc8b0b78b40c78.html",
+          "redirect": "/1d2d8e4a50431b29a6bc8b0b78b40c78.txt",
           "statusCode": 301
         }
     ],
     "navigationFallback": {
-      "rewrite": "/index.html"
+      "rewrite": "/index.html",
+      "exclude": ["/*.{css,scss,js,png,gif,ico,jpg,txt}"]
     }
   }
