@@ -1,11 +1,4 @@
 {
-    "routes": [
-        {
-          "route": "/1d2d8e4a50431b29a6bc8b0b78b40c78/",
-          "redirect": "/api/loadtest",
-          "statusCode": 301
-        }
-    ],
     "navigationFallback": {
       "rewrite": "/index.html"
     }
