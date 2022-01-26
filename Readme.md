@@ -4,7 +4,7 @@
 
 🙋🏼 This repository is a fork of the [Strapi e-commerce starter](https://strapi.io/blog/strapi-starter-nuxt-js-e-commerce) deployed on [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/deploy-nuxtjs) 
 
-### Getting Started 
+## Getting Started 
 
 1. Clone this repository 
 
