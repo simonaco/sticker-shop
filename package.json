@@ -7,7 +7,8 @@
     "start": "nuxt start",
     "serve": "nuxt serve",
     "generate": "nuxt generate",
-    "build": "nuxt generate"
+    "build": "nuxt generate",
+    "swa-local": "npx @azure/static-web-apps-cli start http://localhost:3000 --run \"npm run develop\" --api-location api"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
